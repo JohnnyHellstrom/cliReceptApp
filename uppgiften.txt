@@ -1,0 +1,33 @@
+Uppgiften:
+
+Skapa ett ett cli-program som fungerar som en recept-databas.
+
+Först när programmet startas ska användaren frågas om ett menyval. 1-4.
+Sök recept
+Lägg till recept
+Ta bort recept
+Lista alla recept
+Avsluta
+
+1.
+Väljer man sök recept så ska man kunna skriva in alla ingredienser man har  med kommaseparering. (bonuspoäng om det fungerar med komma och efterföljande mellanslag). Ni ska baserat på de inskrivna ingredienserna då söka i en textfilsdatabas efter alla recept som matchar dom ingredienser. 
+Ni ska bara föreslå recept som har alla ingredienser eller delar av dom men inte något recept där ingredienser saknas.
+
+2.
+När man lägger till recept så ska först ett namn anges, sen får man antingen här också ange ingredienser med kommaseparering eller om ni vill skapa en loop som frågar användaren tills det att den trycker enter med ett blankt svar. 
+
+3.
+För att ta bort ett recept så behöver man bara skriva in namnet på det receptet som ska bort.
+
+4.
+Lista alla recept som finns i databasen.
+
+Avslutar cli-applikationen
+
+
+Använd funktionen readline för att ta in användar-input: https://www.php.net/manual/en/function.readline.php
+Finns enkla exempel där på hur ni gör
+
+Databasen i detta fall bör vara en enkel text eller json fil, använd t.ex. file_get_contents  & file_put_contents för att läsa och skriva till filen och om ni väljer json som format så har ni funktionen "json_encode" eller "json_decode" som kan göra om arrayer och objekt till json 
+
+Hojta till om något mer behöver förtydligas annars kan ni antingen köra 2 och 2 eller alla 4 ihop. Kan vara kul att göra en lite code-review sen tänker jag på varandras projekt?
